@@ -18,4 +18,8 @@ pub enum CustomError {
     BetAlreadyPlaced,
     #[msg("Bet not found")]
     BetNotFound,
+    #[msg("Match not active")]
+    MatchNotActive,
+    #[msg("Invalid bet amount")]
+    InvalidBetAmount,
 }
