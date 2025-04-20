@@ -22,4 +22,8 @@ pub enum CustomError {
     MatchNotActive,
     #[msg("Invalid bet amount")]
     InvalidBetAmount,
+    #[msg("Match still active")]
+    MatchStillActive,
+    #[msg("Prizes already distributed")]
+    PrizesAlreadyDistributed,
 }

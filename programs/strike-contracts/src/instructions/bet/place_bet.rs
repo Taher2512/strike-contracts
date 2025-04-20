@@ -41,6 +41,8 @@ pub fn place_bet(ctx: Context<PlaceBet>, match_id: u64, amount: u64, team_id: St
     bet.timestamp = Clock::get()?.unix_timestamp;
     bet.is_distributed = false;
 
+    msg!("FANTASY_CRICKET_BET_ID:{}", bet.bet_id);
+
     match_account.total_bets += 1;
     match_account.total_amount += amount;
 
